@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MSchool</string>
+    <string name="connexion">Connection</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="inscription">Inscription</string>
+    <string name="formation">Formation</string>
+    <string name="mark">Mark</string>
+    <string name="university">University</string>
+    <string name="movies">Movies</string>
+    <string name="help">Help</string>
+    <string name="cancel">Cancel</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="degrees">Degrees</string>
+    <string name="o_level">O Level</string>
+    <string name="bachelor">Bachelor</string>
+    <string name="master">Master</string>
+    <string name="save">Save</string>
+    <string name="error_fields">Error fields</string>
+    <string name="error_connexion">Error connexion</string>
+    <string name="welcome">Welcome</string>
+    <string name="wait">Please wait</string>
+    <string name="success_save">User registered</string>
+    <string name="error_save">User not registered</string>
+    <string name="remember_me">Remember me</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">moumet1995@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="error_login_or_password">Error login or password incorrect</string>
+</resources>

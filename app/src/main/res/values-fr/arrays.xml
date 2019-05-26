@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tabFormation" >
+        <item>Genie Logiciel</item>
+        <item>Reseaux Telecom</item>
+        <item>Logistique</item>
+        <item>Commerce international</item>
+        <item>Info Gestion</item>
+        <item>Robotique</item>
+        <item>Maintenance</item>
+        <item>Infographie</item>
+    </string-array>
+    <string-array name="tabDetails" >
+        <item>Java, C, Android, Asp, Oracle, Java EE. Dev, Analyste programmeur</item>
+        <item>Linux, Base reseau, Oracle, Securite, VoIp. Admin Sys, Admin Reseaux</item>
+        <item>Logistique</item>
+        <item>Commerce international</item>
+        <item>Info Gestion</item>
+        <item>Robotique</item>
+        <item>Maintenance</item>
+        <item>Infographie</item>
+    </string-array>
+</resources>

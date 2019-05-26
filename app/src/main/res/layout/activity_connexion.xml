@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnexionActivity"
+              android:orientation="vertical">
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/connexion"
+              android:gravity="center"
+              android:textSize="@dimen/size_title"
+              android:textStyle="bold|italic"/>
+
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/login"
+              android:layout_marginTop="@dimen/size_sub_title"
+              android:id="@+id/txtLogin"/>
+
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/password"
+              android:layout_marginTop="@dimen/size_sub_title"
+              android:id="@+id/txtPassword"
+              android:inputType="textPassword"/>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_sub_title"
+            android:text="@string/connexion"
+            android:id="@+id/btnConnection"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"/>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_sub_title"
+            android:text="@string/inscription"
+            android:id="@+id/btnInscription"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"/>
+
+</LinearLayout>
