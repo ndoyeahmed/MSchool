@@ -18,16 +18,6 @@ public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
-
-
-
-
-
-
-
-
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
@@ -85,7 +75,6 @@ public class HomeActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
@@ -95,7 +84,8 @@ public class HomeActivity extends AppCompatActivity
             Intent intent = new Intent(HomeActivity.this, FormationActivity.class);
             startActivity(intent);
             // Handle the camera action
-        } else if (id == R.id.nav_mark) {
+        }
+        /*else if (id == R.id.nav_mark) {
             // TO DO
         } else if (id == R.id.nav_university) {
             // TO DO
@@ -105,7 +95,7 @@ public class HomeActivity extends AppCompatActivity
             // TO DO
         } else if (id == R.id.nav_send) {
             // TO DO
-        }
+        }*/
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

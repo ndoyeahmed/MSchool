@@ -16,24 +16,20 @@ import retrofit2.Response;
 
 public class ConnexionActivity extends AppCompatActivity {
 
-    private EditText txtLogin, txtPassword;
-    private String login, password;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_connexion);
-
-        txtLogin = findViewById(R.id.txtLogin);
-        txtPassword = findViewById(R.id.txtPassword);
+        final EditText txtLogin = findViewById(R.id.txtLogin);
+        final EditText txtPassword = findViewById(R.id.txtPassword);
         Button btnConnection = findViewById(R.id.btnConnection);
         //btnInscription = findViewById(R.id.btnInscription);
 
         btnConnection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                login = txtLogin.getText().toString().trim();
-                password = txtPassword.getText().toString().trim();
+                String login = txtLogin.getText().toString().trim();
+                String password = txtPassword.getText().toString().trim();
                 if (login.isEmpty() || password.isEmpty()) {
                     Toast.makeText(ConnexionActivity.this, getString(R.string.error_fields), Toast.LENGTH_SHORT).show();
                 } else {
