@@ -1,15 +1,14 @@
 package controller.mouhamed.com.mschool;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import controller.mouhamed.com.mschool.model.Utilisateur;
 import controller.mouhamed.com.mschool.services.ApiFactory;
-import controller.mouhamed.com.mschool.services.HttpReqTask;
 import controller.mouhamed.com.mschool.services.UtilisateurService;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -18,7 +17,6 @@ import retrofit2.Response;
 public class ConnexionActivity extends AppCompatActivity {
 
     private EditText txtLogin, txtPassword;
-    private Button btnConnection, btnInscription;
     private String login, password;
 
     @Override
@@ -28,8 +26,8 @@ public class ConnexionActivity extends AppCompatActivity {
 
         txtLogin = findViewById(R.id.txtLogin);
         txtPassword = findViewById(R.id.txtPassword);
-        btnConnection = findViewById(R.id.btnConnection);
-        btnInscription = findViewById(R.id.btnInscription);
+        Button btnConnection = findViewById(R.id.btnConnection);
+        //btnInscription = findViewById(R.id.btnInscription);
 
         btnConnection.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,13 +45,6 @@ public class ConnexionActivity extends AppCompatActivity {
                     utilisateur.setPassword(password);
                     postToServer(utilisateur);
                 }
-            }
-        });
-
-        btnInscription.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new HttpReqTask().execute();
             }
         });
     }
