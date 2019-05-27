@@ -2,9 +2,9 @@ package controller.mouhamed.com.mschool;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -12,15 +12,15 @@ import android.widget.ListView;
 
 public class FormationActivity extends AppCompatActivity {
 
-    private String tabFormation[], tabDetails[];
-    private String formation, details;
-    private ListView listFormation;
+    private String[] tabFormation;
+    private String[] tabDetails;
+//    private String formation, details;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formation);
-        listFormation = findViewById(R.id.listFormation);
+        ListView listFormation = findViewById(R.id.listFormation);
         tabFormation = getResources().getStringArray(R.array.tabFormation);
         tabDetails = getResources().getStringArray(R.array.tabDetails);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(FormationActivity.this, android.R.layout.simple_list_item_1, tabFormation);
@@ -28,8 +28,8 @@ public class FormationActivity extends AppCompatActivity {
         listFormation.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                formation = tabFormation[position];
-                details = tabDetails[position];
+                String formation = tabFormation[position];
+                String details = tabDetails[position];
                 AlertDialog.Builder dialog = new AlertDialog.Builder(FormationActivity.this);
                 dialog.setTitle(formation);
                 dialog.setIcon(R.mipmap.ic_launcher);
@@ -44,7 +44,7 @@ public class FormationActivity extends AppCompatActivity {
                 dialog.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-
+                        // TO DO
                     }
                 });
                 dialog.show();
