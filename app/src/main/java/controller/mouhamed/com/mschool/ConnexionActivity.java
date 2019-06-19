@@ -51,8 +51,13 @@ public class ConnexionActivity extends AppCompatActivity {
         call.enqueue(new Callback<Utilisateur>() {
             @Override
             public void onResponse(Call<Utilisateur> call, Response<Utilisateur> response) {
-                Intent intent = new Intent(ConnexionActivity.this, HomeActivity.class);
-                startActivity(intent);
+                Utilisateur utilisateur1 = response.body();
+                if (utilisateur1 != null) {
+                    Intent intent = new Intent(ConnexionActivity.this, HomeActivity.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(ConnexionActivity.this, getString(R.string.error_connexion), Toast.LENGTH_SHORT).show();
+                }
             }
 
             @Override

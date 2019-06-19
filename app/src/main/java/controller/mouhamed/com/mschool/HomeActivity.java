@@ -84,18 +84,18 @@ public class HomeActivity extends AppCompatActivity
             Intent intent = new Intent(HomeActivity.this, FormationActivity.class);
             startActivity(intent);
             // Handle the camera action
-        }
-        /*else if (id == R.id.nav_mark) {
+        } else if (id == R.id.nav_mark) {
             // TO DO
         } else if (id == R.id.nav_university) {
-            // TO DO
+            Intent intent = new Intent(HomeActivity.this, UniversityActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_help) {
             // TO DO
         } else if (id == R.id.nav_share) {
             // TO DO
         } else if (id == R.id.nav_send) {
             // TO DO
-        }*/
+        }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
